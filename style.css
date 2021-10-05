@@ -1,0 +1,140 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  color: #d0d0d0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a0a;
+  position: relative;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile_img img {
+  width: 150px;
+  image-rendering: optimizeQuality;
+  object-position: center;
+  object-fit: cover;
+}
+
+.profile_info {
+  width: 80%;
+}
+
+.profile_title {
+  width: 100%;
+}
+
+.profile_title h1 {
+  margin-bottom: -15px;
+}
+
+.profile_title h4 {
+  color: #8c00ff;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.github,
+.linkedin,
+.codepen {
+  width: fit-content;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.github img {
+  width: 25px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.github a {
+  color: gold;
+}
+
+.github a,
+.linkedin a,
+.codepen a {
+  transition: all 0.5s ease;
+}
+
+.github a:hover,
+.linkedin a:hover,
+.codepen a:hover {
+  transform: scale(1.04);
+  color: #8c00ff;
+}
+
+.linkedin img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.linkedin a {
+  color: #0c84e6;
+}
+
+.codepen img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  #app,
+  .card,
+  .social {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile_info {
+    width: 100%;
+  }
+
+  .github,
+  .linkedin,
+  .codepen {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+}
