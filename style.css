@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font: normal 75% Arial, Helvetica, sans-serif;
   color: #d0d0d0;
+  background-color: #0a0a0a;
 }
 
 canvas {
