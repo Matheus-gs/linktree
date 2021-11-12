@@ -79,15 +79,12 @@ a {
   margin-right: 15px;
 }
 
-.github img {
-  width: 25px;
-  background: gold;
-  border-radius: 50%;
+.github img,
+.linkedin img,
+.codepen img {
+  width: 100px;
+  height: 25px;
   margin-right: 8px;
-}
-
-.github a {
-  color: gold;
 }
 
 .github a,
@@ -100,21 +97,6 @@ a {
 .linkedin a:hover,
 .codepen a:hover {
   transform: scale(1.04);
-  color: #8c00ff;
-}
-
-.linkedin img {
-  width: 25px;
-  margin-right: 8px;
-}
-
-.linkedin a {
-  color: #0c84e6;
-}
-
-.codepen img {
-  width: 25px;
-  margin-right: 8px;
 }
 
 @media screen and (max-width: 600px) {
