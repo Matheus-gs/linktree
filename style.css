@@ -10,7 +10,7 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 a {
@@ -26,6 +26,7 @@ a {
   position: relative;
 }
 
+/* Container */
 #app {
   width: 100%;
   height: 100vh;
@@ -35,12 +36,14 @@ a {
   align-items: center;
 }
 
+/* Main */
 .card {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
+/* Profile */
 .profile_img img {
   width: 150px;
   image-rendering: optimizeQuality;
@@ -48,8 +51,9 @@ a {
   object-fit: cover;
 }
 
+/* Name and Description */
 .profile_info {
-  width: 80%;
+  width:80%;
 }
 
 .profile_title {
@@ -62,62 +66,63 @@ a {
 
 .profile_title h4 {
   color: #8c00ff;
+  font-size:0.8rem;
 }
 
+/* social links */
 .social {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(0,202,115);
 }
 
-.github,
-.linkedin,
-.codepen {
-  width: fit-content;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
-}
-
-.github img,
-.linkedin img,
-.codepen img {
-  width: 100px;
-  height: 25px;
+.social img{
+  width: 25px;
   margin-right: 8px;
 }
 
-.github a,
-.linkedin a,
-.codepen a {
-  transition: all 0.5s ease;
+.social a{
+  width:100%;
+  font: 400 1rem 'Arial', sans-serif;
+  display:flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin: 15px;
+
+  transition: all .5s ease;
+
+  position:relative;
 }
 
-.github a:hover,
-.linkedin a:hover,
-.codepen a:hover {
-  transform: scale(1.04);
+.social a:hover{
+  transform: translateY(-8px )
 }
 
+.social .github a:hover{
+  color: #ffbe00;
+}
+
+.social .linkedin a:hover{
+  color: #00a2ff;
+}
+
+.social .codepen a:hover{
+  color: #fff;
+}
+
+/* Mobile */
 @media screen and (max-width: 600px) {
-  #app,
-  .card,
-  .social {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  .card{
+      flex-direction: column;
+  }
+  .profile_info {
+    width: 100%;
     text-align: center;
   }
 
-  .profile_info {
-    width: 100%;
+  .social{
+    flex-direction: column;
   }
-
-  .github,
-  .linkedin,
-  .codepen {
-    margin-top: 15px;
-    width: 100%;
-    justify-content: center;
-  }
+  
 }
