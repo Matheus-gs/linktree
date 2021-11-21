@@ -1,4 +1,4 @@
-# MyLanding
-A  beautiful landing page for contact info 👨🏽‍💻🚀
+# linktree
+A  beautiful linktree page for contact info 👨🏽‍💻🚀
 
-[Take a look](https://matheus-gs.github.io/MyLanding)
+[Take a look](https://matheus-gs.github.io/linktree)
